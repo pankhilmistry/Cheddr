@@ -1,0 +1,194 @@
+html {
+	/*overflow-x: hidden;*/
+	height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+    font-size: 100%;
+}
+body {
+    color:#333333;
+    min-height: 100%;
+    font-family: "Roboto", sans-serif;    
+ }
+
+section.Gradient{
+	background: -webkit-linear-gradient(0deg, rgba(242, 242, 242, 1), rgba(255, 255, 255, 1));
+}
+
+.container {
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	position: relative;
+ 	
+ }
+
+ .container:before, .container:after {
+ 	content: " ";
+ 	display: table;
+ }
+
+ .container:after {
+ 	clear: both;
+
+ }
+
+
+header {
+  
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+header a.site-logo img {
+	max-width: 100%;
+ 	position: relative;
+ 	margin: 0 20px;
+ }
+
+ header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0 50px;
+ }
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px 0 15px;
+ }
+ header nav ul > li.btn-outline {
+   margin: 0 0 0 15px;
+   padding:10px 15px;
+   border:2px solid #333;
+   border-radius: 4px;
+   transition: all 0.2s ease-in-out;
+ }
+ header nav ul > li.btn-outline:hover {
+   background:#ffc900;
+   border: 2px solid #ffc900;
+ }
+ header nav ul > li > a {
+	font-size: 16px;
+	font-weight: 700;
+    color:#333;
+    text-decoration: none;
+ }
+/* header nav ul > li.btn-outline:hover > a {
+   color:#333;
+ }
+*/
+ header a.btn{
+ 	margin: auto;
+   padding:10px 15px;
+   border:2px solid #333;
+   border-radius: 4px;
+   transition: all 0.2s ease-in-out;
+ 	text-align:center;
+ 	font-size: 16px;
+	font-weight: 700;
+    color:#333;
+    text-decoration: none;
+ }
+ 
+ header a.btn:hover{
+ 	background:#ffc900;
+ 	border: 2px solid #ffc900;
+ }
+
+ 
+
+ header div.hero{
+ 	margin: auto 15px;
+    width: 100vw;
+    height: 100vw;
+     position: relative;  
+     background-image: url(../images/hero.png);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+ }
+
+ header .hero-content{
+ 	top: 42%;
+ 	margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+
+ header .intro {
+ 	 margin: auto;
+ 	 width: 100vw;
+ 	 position: relative;
+ 	 align-content: center;
+ 	 
+ }
+ header .intro h1{
+ 	 margin: 5px auto;
+ 	 padding: 5px 0;
+     width: 100%;                    /* makes sure the title inhabits the full width of its container */
+     text-align: center;             /* aligns text in the horizontal center of the element */
+     font-size: 4rem;                /* specifies the size of the font in root em units */
+     font-weight: 700;               /* makes the font thinner or lighter weight */
+     align-content: center;
+     justify-content: center;
+ }
+
+ header .intro h3{   
+ 	 margin: 5px auto;
+ 	 padding: 5px 0;             
+     width: 100%;                    /* makes sure the title inhabits the full width of its container */
+     text-align: center;             /* aligns text in the horizontal center of the element */
+     font-size: 1.2rem;                /* specifies the size of the font in root em units */
+     font-weight: 400;               /* makes the font thinner or lighter weight */
+     justify-content: center;
+ }
+
+
+
+
+/* description */
+
+header .description {
+	position: relative;
+	text-align: center;
+   display:block;
+   position:relative;
+   width: 100vw;
+   justify-content: center;
+}
+ 
+ .description ul {
+   margin: 0 auto;
+   padding: 1em 0;
+ }
+ .description ul li {
+   list-style-type: none;
+   display: inline-block;
+ }
+ .description i {
+   color:#333333;
+   font-size:36px;
+   margin:0;
+   padding: 5px;
+   vertical-align: middle;
+ }
+ .description h4 {
+   margin: 5px auto;
+   padding: 5px 0;
+   font-size: 20px;
+   font-weight: 700;
+ }
+
+ .description p {
+ 	margin: 5px auto;
+   padding: 5px 0;
+   font-size: 20px;
+   font-weight: 400;
+ }
+
+.one-third {
+ 	display: inline-block;
+ 	position:relative;
+ 	margin: 20px 20px;
+ 	
+ }

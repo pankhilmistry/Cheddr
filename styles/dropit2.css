@@ -1,0 +1,89 @@
+/*
+ * Dropit v1.1.0
+ * http://dev7studios.com/dropit
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* These styles assume you are using ul and li */
+ .dropit2 {
+    list-style: none;
+  padding: 0;
+  
+    float: right;
+    display: inline-block;
+    margin-top:0;
+}
+.dropit2 .dropit2-trigger { position: relative; }
+
+.dropit2 .dropit2-submenu {
+    position: absolute;
+    bottom: 100%;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 140px;
+    list-style: none;
+  padding: 12px 20px;
+  margin: 20px 0 0;
+}
+.dropit2 .dropit2-open .dropit2-submenu { 
+border-style:solid;
+border-color:#333;
+border-width:1.5px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    display: block;
+     }
+
+.dropit2 .dropit2-open .dropit2-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 0;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -7.5px;
+  right: 10px;
+}
+
+.dropit2 .dropit2-open .dropit2-submenu:before {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 10px 0;
+  border-color: #333 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -10px;
+  right: 8px;
+}
+
+
+.dropit2 .dropit2-open .dropit2-submenu li {
+  display: block;
+  margin-bottom: 20px;
+  
+ }
+ .dropit2 .dropit2-open .dropit2-submenu li:last-child {
+  margin-bottom: 0px;
+ }
+ .dropit2 .dropit2-open .dropit2-submenu li a {
+  margin-bottom: 8px;
+  margin-right: 0;
+  color:#333;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+ }
+
+ .dropit2 .dropit2-open .dropit2-submenu li a i {
+    padding-right: 8px;
+    text-align: center;
+ }
