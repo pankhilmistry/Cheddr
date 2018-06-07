@@ -72,10 +72,7 @@ header a.site-logo img {
     color:#333;
     text-decoration: none;
  }
-/* header nav ul > li.btn-outline:hover > a {
-   color:#333;
- }
-*/
+
  header a.btn{
  	margin: auto;
    padding:10px 15px;
@@ -112,16 +109,16 @@ header a.site-logo img {
  	margin: auto;
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
  }
 
  header .intro {
  	 margin: auto;
  	 width: 100vw;
  	 position: relative;
- 	 align-content: center;
- 	 
+ 	 align-content: center;	 
  }
+
  header .intro h1{
  	 margin: 5px auto;
  	 padding: 5px 0;
@@ -129,8 +126,7 @@ header a.site-logo img {
      text-align: center;             /* aligns text in the horizontal center of the element */
      font-size: 4rem;                /* specifies the size of the font in root em units */
      font-weight: 700;               /* makes the font thinner or lighter weight */
-     align-content: center;
-     justify-content: center;
+     align-content: center;   
  }
 
  header .intro h3{   
@@ -140,7 +136,6 @@ header a.site-logo img {
      text-align: center;             /* aligns text in the horizontal center of the element */
      font-size: 1.2rem;                /* specifies the size of the font in root em units */
      font-weight: 400;               /* makes the font thinner or lighter weight */
-     justify-content: center;
  }
 
 
@@ -155,15 +150,18 @@ header .description {
    position:relative;
    width: 100vw;
    justify-content: center;
+   flex-direction: row;
 }
  
  .description ul {
    margin: 0 auto;
-   padding: 1em 0;
+   padding: 1em;
  }
  .description ul li {
    list-style-type: none;
    display: inline-block;
+   margin: 0 auto;
+   padding: 10px;
  }
  .description i {
    color:#333333;
@@ -174,14 +172,14 @@ header .description {
  }
  .description h4 {
    margin: 5px auto;
-   padding: 5px 0;
+   padding: 5px;
    font-size: 20px;
    font-weight: 700;
  }
 
  .description p {
  	margin: 5px auto;
-   padding: 5px 0;
+   padding: 5px;
    font-size: 20px;
    font-weight: 400;
  }
@@ -189,6 +187,6 @@ header .description {
 .one-third {
  	display: inline-block;
  	position:relative;
- 	margin: 20px 20px;
+ 	margin: 20px auto;
  	
  }
