@@ -1,5 +1,5 @@
 html {
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 	height: 100%; /* makes sure our HTML takes up 100% of the browser window */
     font-size: 100%;
 }
@@ -35,9 +35,9 @@ header {
   
 	position: relative;
 	padding-top: 20px;
-	padding-bottom: 20px;
-	
+	padding-bottom: 20px;	
 }
+
 header a.site-logo img {
 	max-width: 100%;
  	position: relative;
@@ -57,7 +57,7 @@ header a.site-logo img {
  }
  header nav ul > li.btn-outline {
    margin: 0 0 0 15px;
-   padding:10px 15px;
+   padding:10px 25px;
    border:2px solid #333;
    border-radius: 4px;
    transition: all 0.2s ease-in-out;
@@ -75,7 +75,7 @@ header a.site-logo img {
 
  header a.btn{
  	margin: auto;
-   padding:10px 15px;
+   padding:10px 35px;
    border:2px solid #333;
    border-radius: 4px;
    transition: all 0.2s ease-in-out;
@@ -98,9 +98,9 @@ header a.site-logo img {
     width: 100vw;
     height: 100vw;
      position: relative;  
-     background-image: url(../images/hero.png);
+     background: url(../images/hero.png);
      background-repeat: no-repeat;
-     background-position: center center;
+     background-position: center;
      background-size: cover;
  }
 
@@ -188,7 +188,6 @@ header .description {
  	display: inline-block;
  	position:relative;
  	margin: 20px auto;
- 	
  }
 
 
@@ -335,7 +334,7 @@ header .description {
 
 .Last-section .olt a{
  	margin: auto;
-   padding:10px 15px;
+   padding:10px 25px;
    border:2px solid #333;
    border-radius: 4px;
    transition: all 0.2s ease-in-out;
@@ -362,6 +361,14 @@ header .description {
    position: relative;
    overflow: hidden;
    z-index: 0;
+ }
+
+.one-third-2 {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	position:relative;
+ 	margin: 20px auto;
+ 	
  }
 
 
@@ -440,3 +447,35 @@ footer .left-footer-block p{
    display: inline-block;
    margin:0 15px 0 15px;
  }
+
+/*-----------------------Media Queries----------------------------------*/
+
+   /*@media (min-width:640px) {
+
+   	.container {
+     width: 600px;
+   }
+
+    .one-third-2 {
+        width: 30%;    
+    }
+
+    .one-third {
+     width:24%;
+   }
+}
+
+  
+ @media (min-width: 1024px) {
+   .container {
+     width: 100vw;
+   }
+   .one-third {
+     width:auto;
+   }
+   .one-third-2 {
+         width: 20%;
+
+    }
+ }
+*/
