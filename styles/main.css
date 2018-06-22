@@ -262,6 +262,14 @@ header .description {
 }
 
 
+.benefits .screenshots {
+	width: 100vw;
+}
+
+.benefits .screenshots img{
+	max-width: 100%;
+}
+
  /*-----------------------Testimonials----------------------------------*/
 
 
@@ -269,6 +277,7 @@ header .description {
   padding-top: 20px;
   padding-bottom: 100px;
   position:relative; 
+  
 }
 
 .Testimonials h1 {
@@ -283,7 +292,7 @@ header .description {
 	font-weight: 700;
 }
 
-.Testimonials .blackbox {
+.Testimonials .blackbox .quote{
   text-align: center;
   padding: 40px;
   margin: 40px auto;
@@ -297,32 +306,34 @@ header .description {
 }
 
 .Testimonials .quote p{
+	width: 60%;
 	padding: 40px;
 	font-size: 20px;
   font-weight: 400;
-  font-style: italic;
-  position: relative;
+  /*font-style: italic;*/
  }
 
 /*-----------------------Last-section----------------------------------*/
 
-.Last-section{
+.Last-section .olt{
   margin:auto;
   padding-bottom: 200px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
-.Last-section h1{
+.Last-section .olt h1{
+  margin:auto;
   max-width: 550px;
   text-align: center;
   font-size: 2.5em;
   font-weight: 700;
 }
 
-.Last-section a{
+.Last-section .olt a{
  	margin: auto;
    padding:10px 15px;
    border:2px solid #333;
@@ -335,7 +346,7 @@ header .description {
     text-decoration: none;
  }
  
- .Last-section a:hover{
+ .Last-section .olt a:hover{
  	background:#ffc900;
  	border: 2px solid #ffc900;
  }
