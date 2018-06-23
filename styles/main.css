@@ -11,6 +11,7 @@ body {
 
 section.Gradient{
 	background: -webkit-linear-gradient(0deg, rgba(242, 242, 242, 1), rgba(255, 255, 255, 1));
+	width: 100vw;
 }
 
 .container {
@@ -32,27 +33,33 @@ section.Gradient{
 
 
 header {
-  
-	position: relative;
-	padding-top: 20px;
+  	padding-top: 20px;
 	padding-bottom: 20px;	
+	text-align: center;
+}
+
+header .navigation{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 header a.site-logo img {
-	max-width: 100%;
- 	position: relative;
+	display: flex;
+	justify-content: flex-start;
  	margin: 0 20px;
  }
 
  header nav ul {
-   display:inline;
-   text-align: right;
-   float:right;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   align-items: center;
    margin:0 50px;
  }
+
  header nav ul > li {
    list-style-type: none;
-   display: inline-block;
    margin:0 15px 0 15px;
  }
  header nav ul > li.btn-outline {
@@ -73,94 +80,67 @@ header a.site-logo img {
     text-decoration: none;
  }
 
- header a.btn{
- 	margin: auto;
-   padding:10px 35px;
-   border:2px solid #333;
-   border-radius: 4px;
-   transition: all 0.2s ease-in-out;
- 	text-align:center;
- 	font-size: 16px;
-	font-weight: 700;
-    color:#333;
-    text-decoration: none;
- }
- 
- header a.btn:hover{
- 	background:#ffc900;
- 	border: 2px solid #ffc900;
- }
+header .hero{
+	margin: auto 15px;
+	padding: 10px 0;
+	
+}
 
- 
-
- header div.hero{
- 	margin: auto 15px;
+  
+ header .landing{
+ 	
     width: 100vw;
     height: 100vw;
-     position: relative;  
      background: url(../images/hero.png);
      background-repeat: no-repeat;
      background-position: center;
-     background-size: cover;
+     background-size: contain;
+
  }
 
  header .hero-content{
  	top: 42%;
- 	margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
  }
-
- header .intro {
- 	 margin: auto;
- 	 width: 100vw;
- 	 position: relative;
- 	 align-content: center;	 
- }
-
+ 
  header .intro h1{
  	 margin: 5px auto;
  	 padding: 5px 0;
-     width: 100%;                    /* makes sure the title inhabits the full width of its container */
-     text-align: center;             /* aligns text in the horizontal center of the element */
-     font-size: 4rem;                /* specifies the size of the font in root em units */
-     font-weight: 700;               /* makes the font thinner or lighter weight */
-     align-content: center;   
+     font-size: 4rem;                
+     font-weight: 700;               
  }
 
- header .intro h3{   
+ header .intro h3{
+ 	 max-width: 500px;
  	 margin: 5px auto;
- 	 padding: 5px 0;             
-     width: 100%;                    /* makes sure the title inhabits the full width of its container */
-     text-align: center;             /* aligns text in the horizontal center of the element */
-     font-size: 1.2rem;                /* specifies the size of the font in root em units */
-     font-weight: 400;               /* makes the font thinner or lighter weight */
+ 	 padding: 5px 0;            
+     font-size: 1.2rem;                
+     font-weight: 400;              
  }
 
 
+/*-----------------------Description----------------------------------*/
 
-
-/* description */
 
 header .description {
-	position: relative;
-	text-align: center;
-   display:block;
-   position:relative;
+   display:flex;
+   flex-wrap: wrap;
    width: 100vw;
-   justify-content: center;
-   flex-direction: row;
 }
  
  .description ul {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
    margin: 0 auto;
    padding: 1em;
  }
  .description ul li {
    list-style-type: none;
-   display: inline-block;
-   margin: 0 auto;
+   min-width: 132px;
+   margin: 10px auto;
    padding: 10px;
  }
  .description i {
@@ -184,25 +164,38 @@ header .description {
    font-weight: 400;
  }
 
-.one-third {
- 	display: inline-block;
- 	position:relative;
- 	margin: 20px auto;
+header a.btn{
+ 	margin: auto;
+   padding:10px 35px;
+   border:2px solid #333;
+   border-radius: 4px;
+   transition: all 0.2s ease-in-out;
+ 	font-size: 16px;
+	font-weight: 700;
+    color:#333;
+    text-decoration: none;
+ }
+ 
+ header a.btn:hover{
+ 	background:#ffc900;
+ 	border: 2px solid #ffc900;
  }
 
 
+/*-----------------------Benefits----------------------------------*/
+
+
  .benefits {
- 	margin-top: 100px;
- 	margin-bottom: 100px;
-	padding-top: 100px;
-	padding-bottom: 100px;
-    position:relative;
+ 	margin:100px 0;
+ 	padding: 100px 0;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	position: relative;
 }
 
 .benefits h1{
 	text-align: center;
 	margin: 50px auto;
-	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -214,14 +207,13 @@ header .description {
 .benefits-wrapper {
 	margin: 100px auto;
 	display: flex;
-	position: relative;
+	flex-wrap: wrap;
 	width: 100vw;
 	align-items: center;
 	justify-content: center;
 }
 
 .benefits-image{
-	position: relative;
 	max-width: 100%;
     display: flex;
     margin: 20px;
@@ -448,34 +440,29 @@ footer .left-footer-block p{
    margin:0 15px 0 15px;
  }
 
+
+
 /*-----------------------Media Queries----------------------------------*/
 
-   /*@media (min-width:640px) {
 
-   	.container {
-     width: 600px;
-   }
 
-    .one-third-2 {
-        width: 30%;    
-    }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 
-    .one-third {
-     width:24%;
-   }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
-
-  
- @media (min-width: 1024px) {
-   .container {
-     width: 100vw;
-   }
-   .one-third {
-     width:auto;
-   }
-   .one-third-2 {
-         width: 20%;
-
-    }
- }
-*/
