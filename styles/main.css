@@ -42,6 +42,7 @@ header .navigation{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
 }
 
 header a.site-logo img {
@@ -67,7 +68,7 @@ header a.site-logo img {
    padding:10px 25px;
    border:2px solid #333;
    border-radius: 4px;
-   transition: all 0.2s ease-in-out;
+   transition: all 0.08s ease-in-out;
  }
  header nav ul > li.btn-outline:hover {
    background:#ffc900;
@@ -83,14 +84,14 @@ header a.site-logo img {
 header .hero{
 	margin: auto 15px;
 	padding: 10px 0;
-	
+
 }
 
   
  header .landing{
  	
-    width: 100vw;
-    height: 100vw;
+    width: calc(100vw - 30px);
+    height: calc(100vw - 30px);
      background: url(../images/hero.png);
      background-repeat: no-repeat;
      background-position: center;
@@ -99,12 +100,16 @@ header .hero{
  }
 
  header .hero-content{
- 	top: 42%;
+ 	top: 41%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
  }
  
+ header .intro img{
+ 	display: none;
+ }
+
  header .intro h1{
  	 margin: 5px auto;
  	 padding: 5px 0;
@@ -186,14 +191,14 @@ header a.btn{
 
 
  .benefits {
- 	margin:100px 0;
- 	padding: 100px 0;
+ 	margin:100px 50px;
+ 	padding: 100px 50px;
  	display: flex;
  	flex-wrap: wrap;
- 	position: relative;
 }
 
 .benefits h1{
+	max-width: 600px;
 	text-align: center;
 	margin: 50px auto;
 	display: flex;
@@ -205,7 +210,7 @@ header a.btn{
 
 
 .benefits-wrapper {
-	margin: 100px auto;
+	margin: 50px auto;
 	display: flex;
 	flex-wrap: wrap;
 	width: 100vw;
@@ -216,10 +221,30 @@ header a.btn{
 .benefits-image{
 	max-width: 100%;
     display: flex;
-    margin: 20px;
+    margin: 20px 0;
     padding:20px;
 }
 
+.benefits-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.benefits-image-mob{
+    display: none;
+}
+
+.benefits-image-pc{
+	max-width: 100%;
+    display: flex;
+    margin: 20px 0;
+    padding:20px;
+}
+
+.benefits-image-pc img{
+	width: 100%;
+	height: 100%;
+}
 
 .benefits-content{
 	position: relative;
@@ -266,15 +291,14 @@ header a.btn{
 
 .Testimonials{
   padding-top: 20px;
-  padding-bottom: 100px;
-  position:relative; 
-  
+  padding-bottom: 100px;  
 }
 
 .Testimonials h1 {
+	max-width: 600px;
 	display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 	margin: 20px auto;
 	padding: 10px;
     text-align: center;
@@ -297,11 +321,11 @@ header a.btn{
 }
 
 .Testimonials .quote p{
-	width: 60%;
-	padding: 40px;
+	max-width: 60%;
+	padding: 20px;
 	font-size: 20px;
   font-weight: 400;
-  /*font-style: italic;*/
+  font-style: italic;
  }
 
 /*-----------------------Last-section----------------------------------*/
@@ -318,7 +342,7 @@ header a.btn{
 
 .Last-section .olt h1{
   margin:auto;
-  max-width: 550px;
+  max-width: 600px;
   text-align: center;
   font-size: 2.5em;
   font-weight: 700;
@@ -349,37 +373,30 @@ header a.btn{
  footer {
    background-color: #e0e0e0;
    color: #333;
-   
-   position: relative;
    overflow: hidden;
    z-index: 0;
  }
 
 .one-third-2 {
- 	display: flex;
- 	flex-wrap: wrap;
- 	position:relative;
- 	margin: 20px auto;
- 	
+ 	margin:0 20px;
+ 	padding: 0 20px;
  }
 
 
  .links1{
  	display: flex;
- 	justify-content: center;
-  flex-wrap: wrap;
+ 	flex-wrap: wrap;
+ 	justify-content: flex-start;
+ 	margin:20px 40px;
  }
 
-footer nav {
-	display: inline-block;
-}
 
  footer nav ul {
    font-size:14px;
    line-height: 32px;
    font-weight:400;
    text-align: left;
-   margin: 20px auto;
+   padding: 20px;
  }
 
  footer nav ul li {
@@ -399,17 +416,19 @@ footer nav ul li a strong{
 
 footer .left-footer-block p{
 	float: left;
-   font-size:12px;
-   line-height: 32px;
-   font-weight:400;
-   text-align: left;
-   margin: 20px 50px;
+	font-size:12px;
+	line-height: 32px;
+	font-weight:400;
+	text-align: left;
+	margin: 20px 50px;
+	padding:0 0 0 45px;
 }
 
  footer .right-footer-block {
  	float: right;
    background-color: transparent;
  }
+
  footer img{
    margin:20px 50px;
    display: inline-block;
@@ -419,25 +438,28 @@ footer .left-footer-block p{
  	background-color: #333;
  	height: 1px;
  	border:0;
-
  }
 
 .socialmedia{
 	width: 100%;
-	float: right;
+	float: left;
 }
 
 .socialmedia ul {
 	padding-top: 10px;
 	padding-bottom: 10px;
-   text-align: right;
-   margin:0 50px;
- }
- .socialmedia ul > li {font-size: 30px;
+	text-align: left;
+	margin:0 50px;
+	padding: 10px 35px;
+	}
+
+ .socialmedia ul > li {
+ 	font-size: 30px;
  	color:#333;
    list-style-type: none;
    display: inline-block;
-   margin:0 15px 0 15px;
+   margin:0;
+   padding: 15px;
  }
 
 
@@ -449,7 +471,158 @@ footer .left-footer-block p{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+	header .intro{
+		vertical-align: middle;
+		margin:auto;
+	}
+	header .intro img{
+		display: block;
+		max-width: 90%;
+		margin: 20px auto;
+		padding: 20px;
+	}
+
+	header .landing{
+		background: none;
+		display: block;
+		width: auto;
+		height: auto;
+	}
+
+	header .navigation{
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+  }
+
+header a.site-logo img {
+ 	margin:20px 20px 0;
+
+ }
+
+ header nav ul {
+ 	flex-direction: column;
+   justify-content: flex-start;
+   padding: 0;
+   margin:20px;
+ }
+ header nav ul > li.btn-outline {
+   margin: 20px;
+ }
+ 
+  header .intro h1{
+ 	 padding: 5px 20px;
+     font-size: 3.2rem;                               
+ }
+
+ header .intro h3{
+ 	 padding: 5px 20px;            
+     font-size: 20px;                            
+ }
+
+ .description ul {
+   flex-direction: column;
+ }
+ 
+ .description h4 {
+   font-size: 16px;
+ }
+
+ .description p {
+   font-size: 16px;
+ }
+ 
+ .benefits {
+ 	margin:50px 20px;
+ 	padding:20px;
+ }
+
+.benefits h1{
+	text-align: left;
+	margin:5px auto;
+	padding:5px 20px;
+	font-size: 2em;
+	justify-content: flex-start;
+ }
+ 
+ .benefits-wrapper {
+	margin: 20px auto;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.benefits-image-mob{
+	max-width: 100%;
+    display: flex;
+    margin:20px 0;
+    padding:20px;
+}
+
+.benefits-image-mob img{
+	width: 100%;
+	height: 100%;
+}
+
+.benefits-image-pc{
+	display: none;
+}
+
+.benefits-content p{
+	font-size: 16px;
+}
+
+.benefits-content h2{
+	font-size: 28px;
+}
+
+.benefits-content h4{
+	font-size: 20px;
+}
+
+ 
+.Testimonials h1 {
+	text-align: left;
+	margin:20px 40px;
+	padding:20px 25px;
+	font-size: 2em;
+	justify-content: flex-start;
+}
+
+.Testimonials .blackbox .quote{
+   margin:20px auto;
+   padding: 20px;
+}
+
+.Last-section .olt h1{
+  font-size: 2em;
+  margin:20px;
+  padding:20px 25px;
+}
+
+.links1{
+	flex-direction: column;
+}
+.one-third-2 {
+ 	margin: 0;
+ }
+
+ footer nav ul {
+   padding: 0;
+ }
+
+ .socialmedia ul {
+	padding: 10px 0;
+	}
+
+footer .left-footer-block p{
+	padding:0 0 0 10px;
+}
+ footer .right-footer-block {
+ 	float: left;
+ 	padding: 10px;
+ }
 } 
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
